@@ -1,8 +1,8 @@
 package com.project2.gradebook.domain;
 
-//import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
-//	@JacksonXmlRootElement(localName="student")
+	@JacksonXmlRootElement(localName="student")
 	public class Student {
 		private String name; 
 		private String grade;
