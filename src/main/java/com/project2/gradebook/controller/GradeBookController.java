@@ -1,12 +1,16 @@
 package com.project2.gradebook.controller;
 
-/*import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
-import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomizer;
-import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
-import org.springframework.context.annotation.Bean;*/
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping(value ="/gradebook")
 public class GradeBookController {
 
+	@RequestMapping(value="/hello",  method = RequestMethod.GET)
+	public String displayhello() {
+		return "Hello!!!";
+	}
 }
 	

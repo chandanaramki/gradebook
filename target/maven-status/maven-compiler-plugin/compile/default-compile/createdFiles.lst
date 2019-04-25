@@ -1,6 +1,6 @@
-com\project2\gradebook\configuration\EmbeddedServletContainerFactory.class
+com\project2\gradebook\Application.class
 com\project2\gradebook\controller\GradeBookController.class
-com\project2\gradebook\App.class
+com\project2\gradebook\configuration\EmbeddedTomcatConfiguration.class
 com\project2\gradebook\domain\GradebookList.class
 com\project2\gradebook\domain\Student.class
 com\project2\gradebook\domain\StudentList.class
