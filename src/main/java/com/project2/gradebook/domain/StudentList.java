@@ -13,14 +13,7 @@ public class StudentList {
 	
 	@JacksonXmlProperty(localName="student")
 	@JacksonXmlElementWrapper(useWrapping=false)
-	private List<Student> studentList = new ArrayList<Student>();
-	
-	public List<Student> getStudents(){
-		return studentList;
-	}
-	
-	public void setStudents(List<Student> studentList) {
-		this.studentList = studentList;
-	}
+	public List<Student> studentList = new ArrayList<Student>();
 	
 }	
+

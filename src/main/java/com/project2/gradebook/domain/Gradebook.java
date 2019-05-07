@@ -7,18 +7,15 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 public class Gradebook {
 	private Integer id; 
 	private String title;
-	@JsonIgnore
 	private String createdServer;
-	@JsonIgnore
 	private Boolean isSecondaryCopy;
-	@JsonIgnore
 	private StudentList studentList;
-	
+	                                                                                   
 	public Gradebook() {
 		super();
 	}
 	
-	public Gradebook(int id, String title, Boolean isSecondaryCopy, String createdServer, StudentList studentList) {
+	public Gradebook(Integer id, String title, Boolean isSecondaryCopy, String createdServer, StudentList studentList) {
 		this.id = id;
 		this.title = title;
 		this.isSecondaryCopy = isSecondaryCopy;
@@ -38,10 +35,10 @@ public class Gradebook {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public StudentList getStudenList() {
+	public StudentList getStudentList() {
 		return studentList;
 	}
-	public void setStudenList(StudentList studentList) {
+	public void setStudentList(StudentList studentList) {
 		this.studentList = studentList;
 	}
 	public String getCreatedServer() {
